@@ -188,3 +188,10 @@
     display: none;
   }
 }
+
+@media (max-width: 500px) {
+  .faculdade-lista {
+    display: grid;
+    justify-content: start;
+  }
+}
