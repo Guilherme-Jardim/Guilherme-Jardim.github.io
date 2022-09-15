@@ -1,0 +1,146 @@
+.footer {
+  background: #000000;
+}
+
+.footer-container {
+  max-width: 1200px;
+  padding: 120px 20px 60px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  position: relative;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #cccccc;
+  padding-right: 50px;
+}
+
+.footer-contato li {
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.footer-contato li a {
+  color: #ffffff;
+}
+
+.email {
+  display: flex;
+  gap: 20px;
+}
+
+.email-link {
+  text-decoration: none;
+  font-size: 2rem;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+}
+
+.email span,
+.whatsapp span {
+  padding-top: 15px;
+}
+
+.whatsapp {
+  display: flex;
+  gap: 20px;
+}
+
+.whatsapp-link {
+  text-decoration: none;
+  font-size: 2rem;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+}
+
+.linkedin {
+  text-decoration: none;
+  font-size: 2rem;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+}
+
+.footer-copy {
+  grid-column: 1 / -1;
+  font-size: 1.125rem;
+  color: #8f8f8f;
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .footer-contato li {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer-container::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 10px;
+    left: 0px;
+    background: url("../img/detalhe.svg") no-repeat center;
+    position: absolute;
+    top: 0px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer-texto {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: #cccccc;
+    padding-right: initial;
+  }
+}
+
+@media (max-width: 1150px) {
+  .footer-contato {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .email {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .whatsapp {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  .footer-contato span {
+    font-size: 1.5rem;
+    padding-top: 15px;
+  }
+}
